@@ -729,7 +729,6 @@ ul {
     width: 322px;
 }
 
-
 /*Modal window*/
 
 .backdrop {
@@ -790,3 +789,8 @@ ul {
     visibility: hidden;
 }
 
+/*Forms*/
+
+label {
+    display: block;
+}

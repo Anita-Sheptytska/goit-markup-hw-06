@@ -444,6 +444,30 @@
                         <use href="./images/icons.svg#icon-close"></use>
                     </svg>
                 </button>
+                <form class="callback-form" name="callback-form" autocomplete="on" novalidate>
+                    <h2>Залиште свої дані, ми вам перезвонимо</h2>
+                    <label>
+                        <span>Ім'я</span>
+                        <input type="text" name="user-name" autofocus>
+                    </label>
+                    <label>
+                        <span>Телефон</span>
+                        <input type="tel" name="user-tel">
+                    </label>
+                    <label>
+                        <span>Пошта</span>
+                        <input type="email" name="user-mail">
+                    </label>
+                    <label>
+                        <span>Коментар</span>
+                        <textarea name="user-message" rows="3" placeholder="Введіть текст"></textarea>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="consent">
+                        <span>Погоджуюсь з розсилкою та приймаю <span>Умови договору</span></span>
+                    </label>
+                    <button type="submit">Відправити</button>
+                </form>
             </div>
         </div>
         <script src="./js/modal.js"></script>
