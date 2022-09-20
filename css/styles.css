@@ -594,9 +594,12 @@ ul {
     background-color: var(--accent-bg-cl);
 }
 
+/*ПІДПИШІТЬСЯ НА РОЗСИЛКУ*/
 
-
-
+.sending-form-email {
+    display: flex;
+    gap: 12px;
+}
 
 .footer-sending {
     margin-left: 93px;
@@ -613,6 +616,7 @@ ul {
 }
 
 .sending-form-btn {
+    width: 200px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -621,10 +625,9 @@ ul {
     color: var(--light-txt-cl);
     cursor: pointer;
     background-color: var(--accent-bg-cl);
-    padding: 10px 32px;
     border: none;
     border-radius: 4px;
-    margin-left: 12px;
+    position: relative;
 }
 
 .sending-form-input {
@@ -647,9 +650,19 @@ ul {
     letter-spacing: 0.03em;
 }
 
-.sending-form-input:focus {
+.sending-form-input:focus,
+.sending-form-input:hover {
     border-color: var(--accent-txt-cl);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sending-form-icon {
+    fill: var(--light-txt-cl);
+    margin-left: 10px;
+    position: absolute;
+    right: 28px;
+    top: 10px;
+    bottom: 10px;
 }
 
 /*2.PORTFOLIO.HTML*/
@@ -683,7 +696,6 @@ ul {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .filters-list .btn:hover,
 .filters-list .btn:focus {
@@ -841,8 +853,10 @@ ul {
     padding: 0;
 }
 
-.modal-btn:focus {
-
+.modal-btn:focus,
+.modal-btn:hover {
+    fill: var(--accent-bg-cl);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -865,6 +879,10 @@ ul {
     margin-top: 40px;
 }
 
+.register-form-link {
+    color: var(--accent-txt-cl);
+}
+
 .register-form-group {
     margin-bottom: 40px;
     margin-left: 41px;
@@ -876,6 +894,7 @@ ul {
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    gap: 7px;
 }
 
 .register-form-btn {
@@ -908,6 +927,7 @@ ul {
     color: var(--dark-txt-cl);
     display: block;
     margin-bottom: 4px;
+    margin-top: 10px;
 }
 
 .register-form-input {
@@ -922,7 +942,8 @@ ul {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.register-form-input:focus {
+.register-form-input:focus,
+.register-form-message:focus {
     border-color: var(--accent-txt-cl);
 }
 
