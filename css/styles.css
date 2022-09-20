@@ -594,6 +594,64 @@ ul {
     background-color: var(--accent-bg-cl);
 }
 
+
+
+
+
+.footer-sending {
+    margin-left: 93px;
+}
+
+.sending-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--light-txt-cl);
+    margin-bottom: 20px;
+}
+
+.sending-form-btn {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    color: var(--light-txt-cl);
+    cursor: pointer;
+    background-color: var(--accent-bg-cl);
+    padding: 10px 32px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 12px;
+}
+
+.sending-form-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 16px;
+    outline: transparent;
+    background-color: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sending-form-input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    letter-spacing: 0.03em;
+}
+
+.sending-form-input:focus {
+    border-color: var(--accent-txt-cl);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /*2.PORTFOLIO.HTML*/
 
 .main {
@@ -781,6 +839,10 @@ ul {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     padding: 0;
+}
+
+.modal-btn:focus {
+
 }
 
 .backdrop.is-hidden {
